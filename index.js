@@ -28,7 +28,7 @@ app.use("/posts",(req,res,next)=>{
                 })
             }
             req.user=decoded.data;
-            console.log(req.user)
+            //console.log(req.user)
             next()
           })
 
@@ -55,4 +55,4 @@ app.use("/",userRouter)
 
 
 
-app.listen(port,()=>console.log(`app is loading at ${port}`))
+app.listen(port,()=>console.log(`server is running ${port}`))
